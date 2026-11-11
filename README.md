@@ -29,7 +29,7 @@ The project uses Python and Scikit-learn for machine learning and Streamlit to d
 
 **Dataset:** Heart Attack Analysis & Prediction Dataset
 
-**Source:** (https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
+**Source:** (https://www.kaggle.com/datasets/sonialikhan/heart-attack-analysis-and-prediction-dataset)
 
 The dataset contains 13 input features and one target variable (`output`).
 
