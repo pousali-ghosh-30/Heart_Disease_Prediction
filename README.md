@@ -1,4 +1,4 @@
-# ❤️ Heart Disease Prediction Using Machine Learning
+# Heart Disease Prediction Using Machine Learning
 
 ## Project Overview
 
@@ -52,7 +52,7 @@ The dataset contains 13 input features and one target variable (`output`).
 | thall | Thalassemia category |
 | output | Target variable |
 
-## 🔍 Project Workflow
+## Project Workflow
 
 1. **Data Collection:** Downloaded the dataset from Kaggle.
 2. **Exploratory Data Analysis:** Examined data distributions, missing values, duplicates, and feature relationships.
@@ -63,7 +63,7 @@ The dataset contains 13 input features and one target variable (`output`).
 7. **Model Saving:** Saved the trained model and preprocessing objects using Joblib.
 8. **Frontend Development:** Built an interactive application using Streamlit.
 
-## 🤖 Machine Learning Algorithms
+## Machine Learning Algorithms
 
 The following algorithms were implemented and compared:
 
