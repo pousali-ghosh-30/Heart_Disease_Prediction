@@ -1,12 +1,12 @@
 # ❤️ Heart Disease Prediction Using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
 This project aims to predict the presence of heart disease using Machine Learning algorithms. It analyzes various medical attributes such as age, cholesterol, blood pressure, chest pain type, and maximum heart rate to classify the input data.
 
 The project uses Python and Scikit-learn for machine learning and Streamlit to develop an interactive web application.
 
-## 🎯 Objectives
+## Objectives
 
 - Perform Exploratory Data Analysis (EDA).
 - Clean and preprocess the dataset.
@@ -15,7 +15,7 @@ The project uses Python and Scikit-learn for machine learning and Streamlit to d
 - Save the trained model for future predictions.
 - Develop an interactive frontend using Streamlit.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Programming Language:** Python
 - **Data Analysis:** Pandas, NumPy
@@ -25,11 +25,11 @@ The project uses Python and Scikit-learn for machine learning and Streamlit to d
 - **Frontend:** Streamlit
 - **Development Environment:** Kaggle Notebook, VS Code
 
-## 📂 Dataset
+## Dataset
 
 **Dataset:** Heart Attack Analysis & Prediction Dataset
 
-**Source:** [Kaggle Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
+**Source:** (https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
 
 The dataset contains 13 input features and one target variable (`output`).
 
@@ -75,7 +75,7 @@ The following algorithms were implemented and compared:
 
 The Streamlit application currently uses the saved Logistic Regression model.
 
-## 📊 Model Evaluation
+## Model Evaluation
 
 The models are evaluated using:
 
@@ -85,7 +85,7 @@ The models are evaluated using:
 - F1 Score
 - Classification Report
 
-## 💻 Project Structure
+## Project Structure
 
 ```text
 Heart_Disease_Prediction/
@@ -98,7 +98,7 @@ Heart_Disease_Prediction/
 └── README.md
 ```
 
-## ⚙️ Installation and Setup
+## Installation and Setup
 
 ### 1. Clone the Repository
 
@@ -128,7 +128,7 @@ The application will open in your browser at:
 
 `http://localhost:8501`
 
-## 🌐 Application Features
+## Application Features
 
 - Interactive user input form.
 - Accepts 13 medical input features.
@@ -136,7 +136,7 @@ The application will open in your browser at:
 - Uses the trained Logistic Regression model.
 - Displays the predicted classification result.
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Add model selection functionality.
 - Improve the user interface.
@@ -144,15 +144,10 @@ The application will open in your browser at:
 - Add interactive data visualizations.
 - Deploy the application online.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is developed for educational and academic purposes only. The predictions are based on a dataset classification task and must not be considered a medical diagnosis or a prediction of an individual's future heart attack. Always consult a qualified healthcare professional for medical advice.
 
-## 👩‍💻 Author
-
-**Pousali Ghosh**
-
-GitHub: [pousali-ghosh-30](https://github.com/pousali-ghosh-30)
 
 ---
 
