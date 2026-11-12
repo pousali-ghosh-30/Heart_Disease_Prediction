@@ -1,152 +1,154 @@
-# Heart Disease Prediction
+# Heart Disease Prediction Using Machine Learning
 
-A machine learning project that predicts whether a patient is likely to have heart disease based on clinical attributes such as age, blood pressure, cholesterol, chest pain type, and ECG results.
+## Project Overview
 
-The project includes both a training workflow and a Streamlit web app for interactive prediction.
+This project aims to predict the presence of heart disease using Machine Learning algorithms. It analyzes various medical attributes such as age, cholesterol, blood pressure, chest pain type, and maximum heart rate to classify the input data.
 
-## Overview
+The project uses Python and Scikit-learn for machine learning and Streamlit to develop an interactive web application.
 
-This application uses a trained Logistic Regression model to assess heart disease risk from medical input values. The model is saved and loaded with joblib, and the app uses a preprocessing pipeline to prepare incoming data before prediction.
+## Objectives
 
-## Features
+- Perform Exploratory Data Analysis (EDA).
+- Clean and preprocess the dataset.
+- Apply different Machine Learning classification algorithms.
+- Evaluate and compare model performance.
+- Save the trained model for future predictions.
+- Develop an interactive frontend using Streamlit.
 
-- Predicts heart disease risk using a trained ML model
-- Interactive web interface built with Streamlit
-- Input validation for all medical parameters
-- Preprocessing pipeline for model input consistency
-- Saved model artifacts for reuse without retraining
+## Technologies Used
 
-## Tech Stack
-
-- Python
-- Streamlit
-- Pandas
-- NumPy
-- scikit-learn
-- joblib
+- **Programming Language:** Python
+- **Data Analysis:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn
+- **Model Serialization:** Joblib
+- **Frontend:** Streamlit
+- **Development Environment:** Kaggle Notebook, VS Code
 
 ## Dataset
 
-The project uses the Heart Attack Analysis & Prediction Dataset.
+**Dataset:** Heart Attack Analysis & Prediction Dataset
 
-Source: https://www.kaggle.com/datasets/sonialikhan/heart-attack-analysis-and-prediction-dataset
+**Source:** (https://www.kaggle.com/datasets/sonialikhan/heart-attack-analysis-and-prediction-dataset)
 
-The dataset contains 13 clinical features and a target variable indicating whether heart disease is present.
+The dataset contains 13 input features and one target variable (`output`).
 
-### Key Features
+### Features Used
 
-- Age
-- Sex
-- Chest pain type
-- Resting blood pressure
-- Cholesterol
-- Fasting blood sugar
-- Resting ECG
-- Maximum heart rate achieved
-- Exercise-induced angina
-- ST depression
-- Slope of ST segment
-- Number of major vessels
-- Thalassemia
+| Feature | Description |
+|---|---|
+| age | Age of the individual |
+| sex | Sex |
+| cp | Chest pain type |
+| trtbps | Resting blood pressure |
+| chol | Cholesterol level |
+| fbs | Fasting blood sugar |
+| restecg | Resting ECG results |
+| thalachh | Maximum heart rate |
+| exng | Exercise-induced angina |
+| oldpeak | ST depression |
+| slp | Slope |
+| caa | Number of major vessels |
+| thall | Thalassemia category |
+| output | Target variable |
+
+## Project Workflow
+
+1. **Data Collection:** Downloaded the dataset from Kaggle.
+2. **Exploratory Data Analysis:** Examined data distributions, missing values, duplicates, and feature relationships.
+3. **Data Cleaning:** Checked and removed duplicate records.
+4. **Data Preprocessing:** Separated features and target, performed train-test splitting, scaling, and categorical encoding.
+5. **Model Training:** Trained multiple classification algorithms.
+6. **Model Evaluation:** Compared models using Accuracy and F1 Score.
+7. **Model Saving:** Saved the trained model and preprocessing objects using Joblib.
+8. **Frontend Development:** Built an interactive application using Streamlit.
+
+## Machine Learning Algorithms
+
+The following algorithms were implemented and compared:
+
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Naive Bayes
+- Decision Tree
+- Support Vector Machine (SVM)
+
+The Streamlit application currently uses the saved Logistic Regression model.
+
+## Model Evaluation
+
+The models are evaluated using:
+
+- Accuracy Score
+- Precision Score
+- Recall Score
+- F1 Score
+- Classification Report
 
 ## Project Structure
 
 ```text
 Heart_Disease_Prediction/
+│
 ├── app.py
 ├── Logistic_Regression_heart.pkl
 ├── preprocessor.pkl
 ├── columns.pkl
 ├── requirements.txt
-├── readme.md
-└── venv/
+└── README.md
 ```
 
-## Installation
+## Installation and Setup
 
-1. Clone the repository:
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pousali-ghosh-30/Heart_Disease_Prediction.git
+git clone https://github.com/pousali-ghosh-30/Heart-Disease-Prediction.git
 ```
 
-2. Navigate to the project folder:
+### 2. Navigate to the Project Folder
 
 ```bash
-cd Heart_Disease_Prediction
+cd Heart-Disease-Prediction
 ```
 
-3. Create a virtual environment (optional but recommended):
-
-```bash
-python -m venv venv
-```
-
-4. Activate the virtual environment:
-
-On Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-On macOS/Linux:
-
-```bash
-source venv/bin/activate
-```
-
-5. Install dependencies:
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-Run the application with:
+### 4. Run the Streamlit Application
 
 ```bash
 streamlit run app.py
 ```
 
-Then open the local URL shown in the terminal, typically:
+The application will open in your browser at:
 
-```text
-http://localhost:8501
-```
+`http://localhost:8501`
 
-Fill in the patient details in the form and click the prediction button to view the risk result.
+## Application Features
 
-## Model Pipeline
+- Interactive user input form.
+- Accepts 13 medical input features.
+- Automatically preprocesses user inputs.
+- Uses the trained Logistic Regression model.
+- Displays the predicted classification result.
 
-The project includes:
+## Future Enhancements
 
-- Data preprocessing
-- Train/test split
-- Feature scaling and transformation
-- Model training
-- Evaluation using performance metrics
-- Model serialization for later inference
-
-## Model Details
-
-The application currently uses a saved Logistic Regression model trained on the heart disease dataset. The trained model and preprocessing objects are stored in the project root as pickle files.
-
-## Example Prediction Output
-
-The app classifies patients into:
-
-- Low Risk
-- High Risk
-
-The output includes a prediction label and a confidence-style probability measure.
+- Add model selection functionality.
+- Improve the user interface.
+- Display model performance comparisons.
+- Add interactive data visualizations.
+- Deploy the application online.
 
 ## Disclaimer
 
-This project is intended for educational and research purposes only. It should not be considered a professional medical diagnosis. Always consult a qualified healthcare professional for medical advice.
+This project is developed for educational and academic purposes only. The predictions are based on a dataset classification task and must not be considered a medical diagnosis or a prediction of an individual's future heart attack. Always consult a qualified healthcare professional for medical advice.
 
-## License
 
-This project is distributed for learning and demonstration purposes.
+---
 
+⭐ If you find this project interesting, consider giving the repository a star!
