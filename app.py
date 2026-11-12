@@ -1,8 +1,22 @@
+"""
+Heart Disease Prediction - Production Streamlit Application
+
+An industrial-grade web application for heart disease risk assessment
+using a trained Logistic Regression model.
+
+Author: Production ML Team
+Version: 1.0.0
+"""
+
 import streamlit as st
 import pandas as pd
 import joblib
 import numpy as np
 from typing import Dict, Any, Tuple
+
+# =============================================================================
+# CONFIGURATION
+# =============================================================================
 
 APP_CONFIG = {
     "page_title": "Heart Disease Risk Assessment",
