@@ -4,7 +4,6 @@ import joblib
 import numpy as np
 from typing import Dict, Any, Tuple
 
-
 APP_CONFIG = {
     "page_title": "Heart Disease Risk Assessment",
     "page_icon": "🫀",
